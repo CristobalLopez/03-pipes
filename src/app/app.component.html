@@ -82,6 +82,36 @@
                 <td>number:'.2-2' </td>
                 <td>{{salario | number:'.2-2'}}</td>
             </tr>
+            <tr>
+                <td>{{valorDePromesa}}</td>
+                <td>async </td>
+                <td>{{valorDePromesa| async}}</td>
+            </tr>
+            <tr>
+                <td>{{fecha}}</td>
+                <td>date </td>
+                <td>{{fecha| date}}</td>
+            </tr>
+            <tr>
+                <td>{{fecha}}</td>
+                <td>date: 'medium' </td>
+                <td>{{fecha| date : 'medium'}}</td>
+            </tr>
+            <tr>
+                <td>{{fecha}}</td>
+                <td>date: 'MMMM - dd' </td>
+                <td>{{fecha| date : 'MMMM - dd'}}</td>
+            </tr>
+            <tr>
+                <td>{{nombre2}}</td>
+                <td>capitalizado </td>
+                <td>{{nombre2| capitalizado}}</td>
+            </tr>
+            <tr>
+                <td>{{nombre2}}</td>
+                <td>capitalizado: false </td>
+                <td>{{nombre2| capitalizado:false}}</td>
+            </tr>
         </tbody>
     </table>
 
@@ -94,6 +124,11 @@
     <pre>
       {{heroe| json}}
     </pre>
+
+
+    <h4>Youtube <small>video</small></h4>
+    <hr>
+    <iframe width="640" height="360" [src]="video| domseguro: 'https://www.youtube.com/embed/'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 
